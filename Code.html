@@ -1,0 +1,1154 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    ::-webkit-scrollbar {
+      width: 15px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #adb5bd; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #6c757d; 
+    }
+    body{
+      font-family: "Open Sans", sans-serif;
+      color: #444444;
+    }
+    .body-1{
+      padding:0px 100px 0px 100px;
+    }
+    h1{
+      font-family: "Raleway", sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 56px;
+      color: black;
+    }
+    h2{
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      position: relative;
+      color: #222222;
+    }
+    h2::before{
+      content: "—— ";
+      color: #3498db;
+      font-weight: lighter;
+    }
+    h2::after{
+      content: " ——";
+      color: #3498db;
+      font-weight: lighter;
+    }
+    h3{
+      text-align: center;
+    }
+    .home{
+      display: flex;
+    }
+    .gif img{
+      float: right;
+    }
+    .h1{
+      display: block;
+      float: left;
+      width: 50%;
+      text-align: left;
+    }
+    .icon{
+      display: block;
+    }
+    .link-5{
+      text-align: center;
+      margin: 0%;
+      border: 0%;
+    }
+    .link{
+      color: #3498db;
+      background-color: white;    
+      margin: 0%;
+      border: 2px solid;
+      padding: 10px 35px;
+      border-radius: 30px;
+      font-size: 16px;
+    }
+    .link:hover{
+      background-color: #3498db;
+      color: white;
+    }
+    .heading{
+      display: block;
+      float: left;
+      text-align: left;
+      top: 0%;
+      left: 0%;
+    }
+    .heading::before{
+      content: none;
+    }
+    .heading::after{
+      content: none;
+    }
+    .head{
+      display: flex;
+    }
+    .para1{
+      order: 1;
+      width: 50%;
+      padding: 0px 20px 0px 0px;
+    }
+    .para2{
+      order: 2;
+      width: 50%;
+    }
+    .openbtn {
+      overflow: hidden;
+      background-color: white;
+      position: fixed;
+      top: 0px;
+      width: 100%;
+    }
+    .openbtn a {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 400;
+      color: #555555;
+    }
+    .openbtn a:hover {
+        color: #3498db;
+    }
+    .openbtn h2{
+      text-align: left;
+      top: 0px;
+      left: 50px;
+    }
+    #hbtn{
+      position: fixed;
+      right: 150px;
+      top: 10px;
+    }
+    #hbtn-1{
+      position: fixed;
+      right: 250px;
+      top: 10px;
+    }
+    #hbtn-2{
+      position: fixed;
+      right: 330px;
+      top: 10px;
+    }
+    #hbtn-3{
+      position: fixed;
+      right: 410px;
+      top: 10px;
+    }
+    #hbtn-4{
+      position: fixed;
+      right: 490px;
+      top: 10px;
+    }
+    #hbtn-5{
+      position: fixed;
+      right: 555px;
+      top: 10px;
+    }
+    #hbtn-6{
+      position: fixed;
+      right: 30px;
+      top: 10px;
+      font-size: 24px;
+    }
+    .but{
+      text-align: end;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      color: #555555;
+      row-gap: 10px;
+    }
+    .had{
+      display: flex;
+      font-family: "Open Sans", sans-serif;
+    }
+    .par1{
+      order: 1;
+      width: 50%;
+      padding: 25px;
+      border-radius: 5px;
+      line-height: 1.8;
+    }
+    .par2{
+      order: 2;
+      width: 50%;
+      padding: 20px;
+      border-radius: 5px;
+      line-height: 1.8;
+    }
+    .ref{
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .ref-01{
+      font-size: 36px;
+      text-align: center;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #3498db;
+    }
+    .ref-1{
+      text-decoration: none;
+      color: #3498db;
+    }
+    .par1:hover{
+      color: white;
+      background-color: #3498db;
+      .ref{
+        color: white;
+      }
+      .ref-1{
+        color: #222222;
+      }
+      .ref-01{
+        color: #3498db;
+        background-color: white;
+      }
+    }
+    .par2:hover{
+      color: white;
+      background-color: #3498db;
+      .ref{
+        color: white;
+      }
+      .ref-1{
+        color: #222222;
+      }
+      .ref-01{
+        color: #3498db;
+        background-color: white;
+      }
+    }
+    .tech-1{
+      columns: 4;
+      row-gap: 10px;
+    }
+    .tech-2{
+      columns: 4;
+      row-gap: 10px;
+    }
+    .tech-3{
+      columns: 4;
+      row-gap: 10px;
+    }
+    .logo{
+      display: inline;
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+    }
+    .logo:hover{
+      color: aqua;
+    }
+    .Spring{
+      background-color: #f6f6f6;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .Spring:hover{
+      background-color: azure;
+    }
+    .Java{
+      background-color: #f6f6f6;
+      padding: 20px;
+    }
+    .Java:hover{
+      background-color: azure;
+    }
+    .Angular{
+      background-color: #f6f6f6;
+      padding: 20px;
+    }
+    .Angular:hover{
+      background-color: azure;
+    }
+    .React{
+      background-color: #f6f6f6;
+      padding: 20px;
+    }
+    .React:hover{
+      background-color: azure;
+    }
+    .AI{
+      background-color: #f6f6f6;
+      padding: 20px;
+    }
+    .AI:hover{
+      background-color: azure;
+    }
+    .Python{
+      background-color: #f6f6f6;
+      padding: 20px;
+    }
+    .Python:hover{
+      background-color: azure;
+    }
+    .Tensor{
+      background-color: #f6f6f6;
+      padding: 20px;
+    }
+    .Tensor:hover{
+      background-color: azure;
+    }
+    .PyTorch{
+      background-color: #f6f6f6;
+      padding: 20px;
+    }
+    .PyTorch:hover{
+      background-color: azure;
+    }
+    .MySQL{
+      background-color: #f6f6f6;
+      padding: 20px;
+    }
+    .MySQL:hover{
+      background-color: azure;
+    }
+    .Docker{
+      background-color: #f6f6f6;
+      padding: 20px;
+    }
+    .Docker:hover{
+      background-color: azure;
+    }
+    .Amazon{
+      background-color: #f6f6f6;
+      padding: 20px;
+    }
+    .Amazon:hover{
+      background-color: azure;
+    }
+    .kuber{
+      background-color: #f6f6f6;
+      padding: 20px;
+    }
+    .kuber:hover{
+      background-color: azure;
+    }
+    .part{
+      padding-left: 100px;
+      font-size: 18px;
+    }
+    .part::before{
+      content: '“';
+      font-size: 40px;
+      color: #e1f0fa;
+    }
+    .part::after{
+      content: '”';
+      font-size: 40px;
+      color: #e1f0fa;
+    }
+    .armi{
+      border-radius: 5px;
+    }
+    .point{
+      padding: 50px;
+    }
+    .team{
+      text-align: center;
+    }
+    .link-1{
+      background-color: #3498db;
+      color: white;
+      border: 0px;
+      font-size: 16px;
+      padding: 10px 10px;
+      border-radius: 5px;
+    }
+    .port{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+    .port-1{
+      display: block;
+      width: 33%;
+    }
+    .port-2{
+      display: block;
+      width: 33%;
+    }
+    .port-3{
+      display: block;
+      width: 33%;
+    }
+    .car{
+      display: flex;
+      flex-direction: row;
+      column-gap: 10px;
+    }
+    .full{
+      display: block;
+      border: 2px solid #3498db;
+      border-radius: 8px;
+      padding: 20px;
+      font-size: 18px;
+      width: 28%;
+      height: auto;
+    }
+    .dev{
+      display: block;
+      border: 2px solid #3498db;
+      border-radius: 8px;
+      padding: 20px;
+      font-size: 18px;
+      width: 28%;
+      height: auto;
+    }
+    .perform{
+      display: block;
+      border: 2px solid #3498db;
+      border-radius: 8px;
+      padding: 20px;
+      font-size: 18px;
+      width: 28%;
+      height: auto;
+    }
+    ul{
+      list-style: none;
+    }
+    ul li:before{
+      content: '✓✓ ';
+      color: #3498db;
+    }
+    .cbtn-1{
+      text-align: center;
+    }
+    .cbtn{
+      background-color: #3498db;
+      border: 0;
+      color: white;
+      padding: 10px;
+      border-radius: 30px;
+    }
+    .contact{
+      display: flex;
+      flex-direction: row;
+    }
+    .mail{
+      display: block;
+      width: 35%;
+      padding: 0px 0px 60px 0px;
+    }
+    .message{
+      display: block;
+      width: 40%;
+      padding: 70px 0px 0px 0px;
+    }
+    .address{
+        display: block;
+        padding: 50px 10px;
+        width: 25%;
+    }
+    .Address{
+        display: inline;
+    }
+    .Add{
+        display: block;
+        padding: 0%;
+    }
+    .box{
+      width: 100%;
+      height: 50px;
+    }
+    .box-1{
+      width: 100%;
+      height: 140px;
+      resize: none;
+      text-align: start;
+    }
+    .copy{
+      display: block;
+      padding: 20px;
+    }
+    .last{
+        float: right;
+    }
+    .lb{
+      position: fixed;
+      background-color: #3498db;
+      color: white;
+      width: 40px;
+      height: 40px;
+      bottom: 10px;
+      right: 30px;
+      border-radius: 5px;
+      border: 2px solid ;
+    }
+    .footer{
+      display: block;
+      word-spacing: 10px;
+      padding: 20px;
+      padding-left: 200px;
+    }
+    .foot{
+      left: 0px;
+      bottom: 0px;
+      width: 100%;
+      display: flex;
+      padding-left: 100px;
+    }
+    #hbtn-10{
+      position:static;
+      right: 0px;
+      bottom: 10px;
+      color: #555555;
+    }
+    #hbtn-9{
+      position: static;
+      right: 6dvb;
+      bottom: 10px;
+      color: #555555;
+    }
+    #hbtn-8{
+      position: static;
+      right: 6dvb;
+      bottom: 10px;
+      color: #555555;
+    }
+    #hbtn-7{
+      position: static;
+      right: 6dvb;
+      bottom: 10px;
+      color: #555555;
+    }
+    @media (max-width : 1400px){
+      #hbtn{
+        padding-left: 300px;
+      }
+    }
+    @media (max-width : 1200px){
+      #hbtn{
+        padding-left: 200px;
+      }
+      .port{
+        display: block;
+        float: center;
+        text-align: center;
+        columns: 2;
+        padding: 0%;
+      }
+      .h1{
+        width: 100%;
+        text-align: left;
+      }
+    }
+    @media (max-width : 1100px){
+      #hbtn{
+        padding-left: 150px;
+      }
+    }
+    @media (max-width : 1000px){
+      .body-1{
+        padding: 0px 50px 0px 50px;
+      }
+      .home{
+        display: block;
+      }
+      .openbtn{
+        position: fixed;
+      }
+      .gif{
+        display: block;
+        width: auto;
+      }
+      .hpic{
+        text-align: center;
+      }
+      .gif img{
+        width: auto;
+        width: 850px;
+        height: 400px;
+      }
+      .h1{
+        width: 100%;
+        text-align: left;
+      }
+      
+    #hbtn{
+      position: fixed;
+      right: 100px;
+      top: 10px;
+    }
+    #hbtn-1{
+      position: fixed;
+      right: 200px;
+      top: 10px;
+    }
+    #hbtn-2{
+      position: fixed;
+      right: 280px;
+      top: 10px;
+    }
+    #hbtn-3{
+      position: fixed;
+      right: 360px;
+      top: 10px;
+    }
+    #hbtn-4{
+      position: fixed;
+      right: 440px;
+      top: 10px;
+    }
+    #hbtn-5{
+      position: fixed;
+      right: 505px;
+      top: 10px;
+    }
+      .head{
+        display: block;
+      }
+      .para1{
+        width: auto;
+      }
+      .para2{
+        width: 100%;
+      }
+      .had{
+        display: block;
+      }
+      .par1{
+        width: auto;
+      }
+      .par2{
+        width: 100%;
+      }
+      .tech-1{
+        display: block;
+        columns: 1;
+      }
+      .tech-2{
+        display: block;
+        columns: 1;
+      }
+      .tech-3{
+        display: block;
+        columns: 1;
+      }
+      .point{
+        padding: 40;
+      }
+      .port{
+        display: block;
+        float: center;
+        text-align: center;
+        columns: 1;
+        padding: 0%;
+      }
+      .port-1{
+        display: block;
+        float: center;
+        text-align: center;
+        columns: 1;
+        padding: 0%;
+      }
+      .port-2{
+        display: block;
+        float: center;
+        text-align: center;
+        columns: 1;
+        padding: 0%;
+      }
+      .port-3{
+        display: block;
+        float: center;
+        text-align: center;
+        columns: 1;
+        padding: 0%;
+      }
+      .car{
+        display: block;
+        align-items: center;
+      }
+      .full{
+        width: 350px;
+      }
+      .dev{
+        width: 350px;
+      }
+      .perform{
+        width: 350px;
+      }
+      .contact{
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
+        flex-grow: 1;
+      }
+      .mail{
+          display: block;
+          width: 100%;
+          padding: 0%;
+      }
+      .message{
+          display: block;
+          width: 100%;
+          padding: 0%;
+      }
+      .address{
+           display: block;
+           padding: 0%;
+           width: 100%;
+      }
+      .copy{
+        display: block;
+        padding: 0%;
+      }
+      .footer{
+        text-align: end;
+        display: inline;
+        padding-left: 100px;
+      }
+      .foot{
+        padding-left: 0%;
+        display: block;
+      }
+    }
+    .openbtn .icon {
+      display: none;
+    }
+    @media screen and (max-width: 900px) {
+      .openbtn a {
+        display: none;
+      }
+      .openbtn a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      .openbtn.responsive {
+        position: relative;
+      }
+      .openbtn.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .openbtn.responsive a {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+      }
+      .gif img{
+        width: 700px;
+        height: 400px;
+      }
+    }
+    @media (max-width : 600px){
+      body{
+        padding: 0%;
+      }
+      .hpic{
+        width: 300px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="openbtn" id="openbuton">
+      <h2 class="heading">Samasra Soft Inc.</h2>
+      <div class="opbtn">
+        <a class="but" id="hbtn-5"onclick="openNav()" href="#" onmouseover= "this.style.color='#3498db'" onmouseleave="this.style.color='#555555'">Home</a>
+        <a class="but" id="hbtn-4"onclick="openNav()" href="#about" onmouseover= "this.style.color='#3498db'" onmouseleave="this.style.color='#555555'">About</a>
+        <a class="but" id="hbtn-3"onclick="openNav()" href="#platform" onmouseover= "this.style.color='#3498db'" onmouseleave="this.style.color='#555555'">Platform</a>
+        <a class="but" id="hbtn-2"onclick="openNav()" href="#portfolio" onmouseover= "this.style.color='#3498db'" onmouseleave="this.style.color='#555555'">Portfolio</a>
+        <a class="but" id="hbtn-1" onclick="openNav()" href="#careers" onmouseover= "this.style.color='#3498db'" onmouseleave="this.style.color='#555555'">Careers</a>
+        <a class="but" id="hbtn" onclick="openNav()" href="#contactus" onmouseover= "this.style.color='#3498db'" onmouseleave="this.style.color='#555555'">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" id="hbtn-6" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
+    <div class="body-1">
+      <br>
+          <br>
+          <br>
+        <div id="#" class="home">
+          <br>
+          <br>
+          <br>
+          <div class="gif">
+            <img class="hpic" src="./Home.gif" width="600px" height="450px">
+            <div class="h1">
+              <div class="extra"><br/></div>
+              <div class="extra"><br/></div>
+              <div class="extra"><br/></div>
+              <h1>Grow your business with Samasra.</h1>
+              <p style="font-size: 26px;">
+                Samasra builds venture-funded world-class niche software products and/or platforms from concept to production.
+              </p>
+              <br>
+              <a href="#about"><button class="link">Get Started</button></a>
+              <div class="extra"><br/></div>
+              <div class="extra"><br/></div>
+              <div class="extra"><br/></div>
+              <div class="extra"><br/></div>
+            </div>
+          </div>
+        </div>
+        <div class="extra"><br/></div>
+        <div class="extra"><br/></div>
+        <div id="about">
+          <div class="extra"><br/></div>
+          <div class="extra"><br/></div>
+          <br>
+          <h2>ABOUT US</h2>
+          <div class="head">
+              <p class="para1" style="font-size: 20px;">
+                  We are a bunch of experienced silicon valley entrepreneurs, energetic engineers, and research scientists with 20+ years of experience in building products/platforms in FinTech, RegTech and AI/ML.
+              </p>
+              <p class="para2" style="font-size: 20px;">
+                  The platforms we built are solving high risk banking problems in cannabis industries and explaining the hidden biases in the heart of the ML systems at Fintech companies.
+              </p>
+          </div>
+          <div class="head">
+              <p class="para1" style="font-size: 20px;">
+                  The products we have built/building are venture funded and backed by giants in the industries. Some of the areas we are working right now includes blockchain, crypto, explainable AI/ML, and search engines.
+             </p>
+             <p class="para2" style="font-size: 20px;">
+                 The CXO's of the company are from companies like Microsoft, and Element AI. We have filed patents in AI/ML systems and search technologies.
+             </p>
+          </div>
+        </div>
+        <div id="platform">
+          <div class="extra"><br/></div>
+          <div class="extra"><br/></div>
+          <div class="extra"><br/></div>
+          <div class="extra"><br/></div>
+          <h2>PLATFORM</h2>
+          <div class="extra"><br/></div>
+          <div class="extra"><br/></div>
+          <div class="had">
+            <div class="par1">
+              <div class="ref-01">
+                <span>&#127952;</span>
+              </div>
+              <div class="extra"><br/></div>
+              <a class="ref" href="#">Fintech Platform</a>
+              <p style="font-size: 15px;">
+                Building World class fintech platforms for new digital economies <a class="ref-1" href="https://www.pointchain.ai/" target="_blank">Pointchain.io </a><br/>
+                Providing trusted, efficient networks using smart contracting and analytics: built for regulated, high risk, and complex industries.
+              </p>
+            </div>
+            <div class="extra"><br/></div>
+            <div class="par2">
+              <div class="ref-01">
+                <span>&#128196;</span>
+              </div>
+              <div class="extra"><br/></div>
+              <a class="ref" href="#">AI/ML</a>
+              <p style="font-size: 15px;">
+                Building best-in class new breed trusted, governing, sustainable digital world Artificial Intelligence and Machine Learning platforms to observe production, remove silos to make organization meet regulatory requirements: <a class="ref-1" href="https://www.armilla.ai/" target="_blank">Armilla.ai</a>
+              </p>
+            </div>
+          </div>
+          <div class="extra"><br/></div>
+          <div class="had">
+            <div class="par1">
+              <div class="ref-01">
+                <span>&#8855;</span>
+              </div>
+              <div class="extra"><br/></div>
+              <a class="ref" href="#">RegTech Platform</a>
+              <p style="font-size: 15px;">
+                Risk & compliance assessment and due-diligence technology platforms to address every day challenges of Financial Institutions, Corporates, Government Agencies, and FinTechs <a class="ref-1" href="https://www.exiger.com/DDIQ/" target="_blank"> DDIQ</a>
+              </p>
+            </div>
+            <div class="extra"><br/></div>
+            <div class="par2">
+              <div class="ref-01">
+                <span>&#x1F310;</span>
+              </div>
+              <div class="extra"><br/></div>
+              <a class="ref" href="#">ERP Systems</a>
+              <p style="font-size: 15px;">
+                Next generation cutting edge SaaS platform to help drive the produce business with analytics support and making smart decisions at the fingertips. Helps maintain transparency from supplier to wholesaler with predictive analytics on demand, supply, and profitability trends. <a class="ref-1" href="https://sundineproduce.com/" target="_blank">Sundine, FDI</a>
+              </p>
+            </div>
+        </div>
+          <br>
+          <br>
+          <div class="extra"><br/></div>
+          <div class="extra"><br/></div>
+          <h2>TECH STACK</h2>
+          <br/>
+          <div class="tech">
+            <div class="tech-1">
+              <div class="Spring">
+                <img src="./Spring-boot.png"><a class="logo" href="https://spring.io/projects/spring-boot" target="_blank">Spring-boot</a>
+              </div>
+              <div class="Java">
+                <img src="./Java.png"><a class="logo" href="https://www.oracle.com/in/java/" target="_blank">Java</a>
+              </div>
+              <div class="Angular">
+                <img src="./Angular.png"><a class="logo" href="https://angular.dev/" target="_blank">Angular</a>
+              </div>
+              <div class="React">
+                <img src="./React_JS.png"><a class="logo" href="https://react.dev/" target="_blank">React JS</a>
+              </div>
+            </div>
+            <div class="tech-2">
+              <div class="AI">
+                <img src="./AI_ML.png"><a class="logo" href="https://ai.google/" target="_blank">AI/ML</a>
+              </div>
+              <div class="Python">
+                <img src="./Python.png"><a class="logo" href="https://www.python.org/" target="_blank">Python</a>
+              </div>
+              <div class="Tensor">
+                <img src="./Tenser_Flow.png"><a class="logo" href="https://www.tensorflow.org/" target="_blank">Tensorflow</a>
+              </div>
+              <div class="PyTorch">
+                <img src="./PyTorch.png"><a class="logo" href="https://pytorch.org/" target="_blank">PyTorch</a>
+              </div>
+            </div>
+            <div class="tech-3">
+              <div class="MySQL">
+                <img src="./MySQL.png"><a class="logo" href="https://www.mysql.com/" target="_blank">MySQL</a>
+              </div>
+              <div class="Docker">
+                <img src="./Docker.png"><a class="logo" href="https://www.docker.com/" target="_blank">Docker</a>
+              </div>
+              <div class="Amazon">
+                <img src="./Amazon Web.png"><a class="logo" href="https://aws.amazon.com/" target="_blank">Amazon Web Services</a>
+              </div>
+              <div class="Kuber">
+                <img src="./Kubernetes.png"><a class="logo" href="https://kubernetes.io/" target="_blank">Kubernetes</a>
+              </div>
+            </div>
+          </div>
+          <br/>
+          <br>
+          <div class="extra"><br/></div>
+          <div class="extra"><br/></div>
+          <div class="partners">
+            <h2>PARTNERS</h2>
+            <br>
+            <br>
+            <div class="point">
+              <img class="armi" src="./pointchain.png" width="130px"><p class="part">PointChain is a blockchain based banking ecosystem built to solve high risk cannabis businesses financial problems, as part of that we provide features like B2B and B2C transactions, smart contracts, capital lending for cannabis businesses, high volume payment APIs for internet payments and programs like BNPL.</p>
+            </div>
+            <br/>
+            <br/>
+            <div class="point">
+              <img class="armi" src="./Armilla.jpg" width="130px"><p class="part">Armilla AI is a Quality Assurance platform for models allowing large enterprises to governance, deploy and scale their Machine Learning systems. Our clients leverage Armilla AI to govern, validate, test, and monitor any and all models across the enterprise in a reliable, consistent, and repeatable manner.</p>
+            </div>
+            <br/>
+            <br/>
+            <div class="point">
+              <img class="armi" src="./ddiq.png" width="130px"><p class="part">DDIQ is a risk-based cognitive computing platform that combines automation with the skills of a human researcher to uncover and analyze regulatory risks of a subject that are not found using current techniques. DDIQ empowers compliance teams at financial institutions, corporations, and investment firms to mitigate risk and meet the increasing demands of regulators to automatically and constantly screen all available public data about a subject while preparing auditable reports.</p>
+            </div>
+          </div>
+        </div>
+        <div id="portfolio">
+          <div class="extra"><br/></div>
+          <div class="extra"><br/></div>
+          <div class="extra"><br/></div>
+          <h2>PORTFOLIO</h2>
+          <div class="extra"><br/></div>
+          <div class="team">
+            <a href="#profilo"><button class="link-1">Team</button></a>
+          </div>
+          <br/>
+          <div class="extra"><br/></div>
+          <div class="port">
+            <div class="port-1">
+              <img src="./port-1.jpg" width="380px" height="309px"/>
+              <div class="extra"><br/></div>
+              <div class="port-4">
+                <img src="./port-4.jpg" width="380px" height="309px"/>
+              </div>
+              <div class="extra"><br/></div>
+              <img src="./port-7.jpg" width="380px" height="309px"/>
+              <div class="extra"><br/></div>
+            </div>
+            <div class="port-2">
+              <img src="./port-2.jpg" width="380px" height="309px"/>
+              <div class="extra"><br/></div>
+              <img src="./port-5.jpg" width="380px" height="309px"/>
+              <div class="extra"><br/></div>
+              <img src="./port-8.jpg" width="380px" height="309px"/>
+              <div class="extra"><br/></div>
+            </div>
+            <div class="port-3">
+              <img src="./port-3.jpg" width="380px" height="309px"/>
+              <div class="extra"><br/></div>
+              <img src="./port-6.jpg" width="380px" height="309px"/>
+              <div class="extra"><br/></div>
+              <img src="./port-9.jpg" width="380px" height="309px"/>
+              <div class="extra"><br/></div>
+              </div>
+          </div>
+        </div>
+        <div id="careers">
+          <div class="extra"><br/></div>
+          <div class="extra"><br/></div>
+          <div class="extra"><br/></div>
+          <h2>CAREERS</h2>
+          <br>
+          <div class="car">
+            <div class="full">
+              <h3>Full Stack Developer</h3>
+              <p>
+                A venture-funded Fintech startup adopting Blockchain and AI Looking for 2 to 5 years of hands-on deep technical experience candidate with a passion in the blockchain and AI technologies, SaaS model, especially in the Java / Spring boot/microservices stack, Docker / Kubernetes, Containers, relational and NoSQL databases, angularJS, CI/CD, and Cloud services.
+              </p>
+              <ul>
+                <li>Design, develop, and test trusted, efficient transactional payment networks and contracts platforms using smart contracting and analytics: built for regulated, high-risk, and complex industries in the USA and Canada.</li>
+                <li>Candidate to support the software full lifecycle and total requirements of the product platform.</li>
+                <li>Develop key elements of the distributed systems platform with high data loads for modern web architectures. Participate in agile software development practices, including coding, testing, debugging to implement solutions.</li>
+              </ul>
+              <div class="cbtn-1">
+                <a href="#contactus"><button class="cbtn">More details contact us</button></a>
+              </div>
+            </div>
+            <br>
+            <div class="dev">
+              <h3>DevOps Engineer</h3>
+              <p>
+                We are looking for 3-5 years experience in AWS / EC2 / copilot automation / route53 / network gateways / ecs / automation / load balancer setups / firewall setup / cloudwatch / cloudtrail / monitoring / cost-benefit analysis in aws / pipeline automation / unix scripting 
+              </p>
+                <ul>
+                  <li>Working with an agile team to setup and configure cloud-based environments.</li>
+                  <li>Package and support deployment of releases.</li>
+                  <li>Analyzing and resolving technical and application problems.</li>
+                  <li>Knowledge of linux scripting.</li>
+                  <li>Knowledge of cloud architecture concepts (IaaS, PaaS, SaaS)</li>
+                  <li>Securing Web applications (Reverse proxies, firewalls,.)</li>
+                  <li>Setting up tools and required infrastructure.</li>
+                  <li>Defining and setting development, test, release and support processes for DevOps operation.</li>
+                </ul>
+               <div class="cbtn-1">
+                <a href="#contactus"><button class="cbtn">More details contact us</button></a>
+               </div>
+            </div>
+            <br>
+            <div class="perform">
+              <h3>Performance Testing</h3>
+              <p>
+                A venture-funded Fintech startup adopting Blockchain and AI Looking for 2 to 5 years of hands-on deep technical performance test automation experience candidate with one or more load testing tools.</p>
+                <ul>
+                  <li>Analyze requirements and specifications.</li>
+                  <li>Ability to design, develop, execute Performance test cases and scripts that covers multiple scenarios such as smoke, load, Stress, soak testing.</li>
+                  <li>Hands-on experience with one or more load testing tools like LoadRunner, JMeter.</li>
+                  <li>Candidates should be able to create a framework.</li>
+                  <li>Hands-on experience understanding Browser DOM elements, caching, rendering, XML, HTTP/HTTPS headers, and authentication mechanisms.</li>
+                  <li>Develop a Performance Test Plan/Strategy document.</li>
+                  <li>Ability to analyze test results and isolate problems through overlaying and merging graphs for response time, throughput.</li>
+                </ul>
+              </p>
+              <div class="cbtn-1">
+                <a href="#contactus"><button class="cbtn">More details contact us</button></a>
+               </div>          
+            </div>
+          </div>
+        </div>
+        <div id="contactus">
+          <div class="extra"><br/></div>
+          <div class="extra"><br/></div>
+          <div class="extra"><br/></div>
+          <h2>CONTACT US</h2>
+          <div class="contact">
+            <div class="mail">
+              <h4 style="font-size: 28px;">Samasra Soft Inc.</h4>
+              <p style="font-size: 20px;">
+                  Samasra builds venture funded world class niche software products and/or platforms from concept to production. We built a venture funded startup company focussed on compliance and risk due diligence platforms. This AI Platform enhances and accelerates risk assessment for clients, transactions, and investments.
+              </p>
+              <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsamasra-soft-inc%2Fabout%2F" target="_blank"><img src="./Linked.png"/></a>
+            </div>
+          <div class="address">
+              <div class="Address">
+                  <div class="Add">
+                      <a href="https://www.google.com/maps/place/6075+Kestrel+Rd,+Mississauga,+ON+L5T+1Y8,+Canada/@43.6452788,-79.6624681,15z/data=!4m15!1m8!3m7!1s0x882b3f47e44350f7:0xe82babda61c4b0cd!2s6075+Kestrel+Rd,+Mississauga,+ON+L5T+1Y8,+Canada!3b1!8m2!3d43.6456975!4d-79.6618761!16s%2Fg%2F11bw43q4bh!3m5!1s0x882b3f47e44350f7:0xe82babda61c4b0cd!8m2!3d43.6456975!4d-79.6618761!16s%2Fg%2F11bw43q4bh?entry=ttu" target="_blank"><img src="./Map.png"></a>
+                      <p>
+                          CANADA<br/>
+                          6075 Kestrel Rd,<br>
+                          Mississauga, ON L5T 1Y8<br>
+                          Canada<br>
+                      </p>
+                      <a href="https://www.google.com/maps/place/Samasra+Soft+Inc+(SSI)/@13.6173811,79.4966337,17z/data=!4m6!3m5!1s0x3a4d4982726e92d3:0x5b04e34e1b82f3d0!8m2!3d13.6170194!4d79.4996633!16s%2Fg%2F11sh5_j4lw?entry=ttu" target="_blank"><img src="./Map.png"></a>
+                      <p>
+                          INDIA<br>
+                          Survey No: 484/1 Thukivakam HW Beside National Highway<br>
+                          Next to Harsha Toyota Dealer<br>
+                          Tirupati, AP 517520 INDIA
+                      </p>
+                      <br>
+                      <a href="mailto:hr@samasra.net@gmail.com" target="_blank"><img src="./Mail.png"></a>
+                      <p>hr@samasra.net</p>
+                  </div>
+              </div>
+              <br/>
+            </div>
+            <div class="message">
+              <input type="text" class="box" id="FirstName" placeholder="Your Name">
+              <br/>
+              <br>
+              <input type="text" class="box" id="Mail" placeholder="Your Email">
+              <br/>
+              <br>
+              <input type="text" class="box" id="Mail" placeholder="Subject">
+              <br/>
+              <br>
+              <input type="text" class="box-1" id="Message" placeholder="Message">
+              <br/><br/>
+              <div class="link-5">
+                <button class="link" type="submit">Send Message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <footer class="foot">
+          <div class="copy">
+            🄫Copyright
+            <strong> Samasra Soft Inc..</strong>
+            All Rights Reserved
+          </div>
+          <div class="extra"><br/></div>
+          <div class="footer">
+              <a class="but" id="hbtn-7" onclick="openNav()" href="#" onmouseover= "this.style.color='#3498db'" onmouseleave="this.style.color='black'">Home</a>
+              <a class="but" id="hbtn-8" onclick="openNav()" href="#about" onmouseover= "this.style.color='#3498db'" onmouseleave="this.style.color='black'">About</a>
+              <a class="but" id="hbtn-9" onclick="openNav()" href="#platform" onmouseover= "this.style.color='#3498db'" onmouseleave="this.style.color='black'">Platform</a>
+              <a class="but" id="hbtn-10" onclick="openNav()" href="#careers" onmouseover= "this.style.color='#3498db'" onmouseleave="this.style.color='black'">Careers</a>
+          </div>
+        </footer>
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    function myFunction() {
+      var x = document.getElementById("openbuton");
+      if (x.className === "openbtn") {
+        x.className += " responsive";
+      } 
+      else {
+        x.className = "openbtn";
+      }
+    }
+  </script>
+  <div class="last">
+    <a href="#"><button class="lb">&#8593;</button></a>
+  </div>
+</body>
+</html>
